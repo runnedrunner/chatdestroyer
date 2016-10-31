@@ -4,10 +4,9 @@ var chatlist = []
 
 input.keydown(function(e) {
   if (e.keyCode == 13) {
-    var message = input.val();
-    var antijosh = message.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    var message = ''
     var cleanerUser = AnonymouseUser
-    var useUser = (cleanerUser.bold().fontcolor(red) + ": ".bold().fontcolor(red) + antijosh)
+    var useUser = (cleanerUser.bold().fontcolor(red) + ": ".bold().fontcolor(red) + message)
     addListItem("saylist", useUser);
     input.val("");
   }
