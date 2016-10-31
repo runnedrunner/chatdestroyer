@@ -7,7 +7,7 @@ input.keydown(function(e) {
     var message = input.val();
     var antijosh = message.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     var cleanerUser = AnonymouseUser
-    var useUser = (cleanerUser.bold().fontcolor(red) + ": ".bold().fontcolor(accountCo) + antijosh)
+    var useUser = (cleanerUser.bold().fontcolor(red) + ": ".bold().fontcolor(red) + antijosh)
     addListItem("saylist", useUser);
     input.val("");
   }
