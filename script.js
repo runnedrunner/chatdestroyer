@@ -8,4 +8,4 @@ var message = "Herro"
     var useUser = ('"' + cleanerUser.bold().fontcolor("red") + ": ".bold().fontcolor("red") + message)
 //    while (true) {
     addListItem("saylist", useUser);
-    }
+//    }
